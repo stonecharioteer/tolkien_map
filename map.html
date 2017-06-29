@@ -12,18 +12,12 @@
     <!-- Optional theme -->
     <link rel="stylesheet" href="static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
     <link href="static/css/base_template.css" rel="stylesheet">
-    <!-- Leaflet -->
-    <link rel="stylesheet" href="static/js/leaflet/leaflet.css" />
-    <script src="static/js/leaflet/leaflet.js"></script>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
 
-
-
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
-    <![endif]-->
   </head>
   <body>
 
@@ -37,16 +31,28 @@
             <span class="icon-bar"></span>
           </button>
           <a class="navbar-brand" href="#">GKN Business Map</a>
+
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary active">
+            <input type="checkbox" id="kpibtn" checked autocomplete="off">KPI
+          </label>
+          <label class="btn btn-primary">
+            <input type="checkbox" id="ecibtn" autocomplete="off">Export Control Information
+          </label>
+          <label class="btn btn-primary">
+            <input type="checkbox" id="billbtn" autocomplete="off">Billing Hours
+          </label>
         </div>
     </div>
+    </nav>
       <div id="mapid" style="width: 1700px; height: 700px;"></div>
-      <script src="static/js/tolkien.js"></script>
+      
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="static/js/jquery-3.2.1.min.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
-    <script src="static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+    <!-- Leaflet -->
+
+    <link rel="stylesheet" href="static/js/leaflet/leaflet.css" />
     <script src="static/js/leaflet/leaflet.js"></script>
+    <script src="static/js/tolkien.js"></script>
   </body>
 </html>
