@@ -21,7 +21,9 @@ app = Flask(__name__)
 def serve_index():
     return render_template("map.html")
 
-
+@app.route("/d3_test")
+def test_d3():
+    return render_template("d3_test.html")
 
 @app.route("/map_list_data")
 def serve_map_list_data():
