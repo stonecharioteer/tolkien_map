@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" href="static/images/gkn.ico">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>GAI Business Map</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="static/bootstrap-3.3.7-dist/css/bootstrap.min.css">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="static/bootstrap-3.3.7-dist/css/bootstrap-theme.min.css">
+    <link href="static/css/base_template.css" rel="stylesheet">
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="static/js/jquery-3.2.1.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="static/bootstrap-3.3.7-dist/js/bootstrap.min.js"></script>
+
+  </head>
+  <body>
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">GKN Business Map</a>
+
+        </div>
+        <div class="btn-group" data-toggle="buttons">
+          <label class="btn btn-primary active">
+            <input type="checkbox" id="kpibtn" checked autocomplete="off">KPI
+          </label>
+          <label class="btn btn-primary">
+            <input type="checkbox" id="ecibtn" autocomplete="off">Export Control Information
+          </label>
+          <label class="btn btn-primary">
+            <input type="checkbox" id="billbtn" autocomplete="off">Billing Hours
+          </label>
+        </div>
+    </div>
+    </nav>
+      <div id="mapid" style="width: 1700px; height: 700px;"></div>
+      
+
+    <!-- Leaflet -->
+
+    <link rel="stylesheet" href="static/js/leaflet/leaflet.css" />
+    <script src="static/js/leaflet/leaflet.js"></script>
+    <script src="static/js/tolkien.js"></script>
+  </body>
+</html>
